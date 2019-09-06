@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-Vs-0Uu">
+                                <rect key="frame" x="77" y="629" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pmG-Yf-QYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="tintColor" red="0.97812938689999995" green="0.89030045270000002" blue="0.31347513199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Choose your country">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJG-Q2-hws"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UN" translatesAutoresizingMaskIntoConstraints="NO" id="UBt-KU-TlJ">
+                                <rect key="frame" x="87" y="174" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="FLp-Xg-KJz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-Vf-6dD">
+                                <rect key="frame" x="77" y="703" width="260" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Choose your country #2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nrj-PO-hlY" kind="show" id="ida-8b-6Tq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afa-sM-QBg">
+                                <rect key="frame" x="83" y="427" width="249" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80713313637900497" green="0.96542278816694926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dx1-Vs-0Uu" secondAttribute="trailing" constant="77" id="17t-ro-dKc"/>
+                            <constraint firstItem="UBt-KU-TlJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="3Nb-LR-deJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aVu-Vf-6dD" secondAttribute="trailing" constant="77" id="6JF-tY-bAW"/>
+                            <constraint firstItem="afa-sM-QBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="Lj5-W4-thK"/>
+                            <constraint firstItem="aVu-Vf-6dD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="OSA-Tg-xyQ"/>
+                            <constraint firstItem="UBt-KU-TlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="QVa-LC-FEu"/>
+                            <constraint firstItem="dx1-Vs-0Uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="R69-s2-7al"/>
+                            <constraint firstItem="afa-sM-QBg" firstAttribute="top" secondItem="UBt-KU-TlJ" secondAttribute="bottom" constant="125" id="bSR-yF-tjH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afa-sM-QBg" secondAttribute="trailing" constant="82" id="dwC-fN-4Rm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UBt-KU-TlJ" secondAttribute="trailing" constant="87" id="eeZ-bt-Fi6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aVu-Vf-6dD" secondAttribute="bottom" constant="124" id="lSe-04-A29"/>
+                            <constraint firstItem="aVu-Vf-6dD" firstAttribute="top" secondItem="dx1-Vs-0Uu" secondAttribute="bottom" constant="24" id="rbh-fP-AAQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MainButton" destination="dx1-Vs-0Uu" id="acl-AC-2MM"/>
+                        <outlet property="MainLabel" destination="afa-sM-QBg" id="n8L-G7-g2Z"/>
+                        <outlet property="MainLogo" destination="UBt-KU-TlJ" id="j4u-Gg-EGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+        <!--Selection Screen-->
+        <scene sceneID="Ako-XR-6rw">
+            <objects>
+                <viewController storyboardIdentifier="SelectionScreen" id="ltC-JA-SVO" customClass="SelectionScreen" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cp8-TI-2gh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giv-4u-2Io">
+                                <rect key="frame" x="80" y="668" width="304" height="125"/>
+                                <state key="normal" title="Button" image="UK"/>
+                                <connections>
+                                    <action selector="UKTapped:" destination="ltC-JA-SVO" eventType="touchUpInside" id="Cin-Ve-Z93"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iww-yC-1Qx">
+                                <rect key="frame" x="80" y="122" width="304" height="125"/>
+                                <state key="normal" title="Button" image="Canada"/>
+                                <connections>
+                                    <action selector="CanadaTapped:" destination="ltC-JA-SVO" eventType="touchUpInside" id="B2D-JX-5JU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b2-YL-zBj">
+                                <rect key="frame" x="80" y="491" width="304" height="132"/>
+                                <state key="normal" title="Button" image="USA"/>
+                                <connections>
+                                    <action selector="USATapped:" destination="ltC-JA-SVO" eventType="touchUpInside" id="OC6-Co-5D7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfb-4C-cnD">
+                                <rect key="frame" x="80" y="300" width="304" height="150"/>
+                                <state key="normal" title="Button" image="Germany"/>
+                                <connections>
+                                    <action selector="GermanyTapped:" destination="ltC-JA-SVO" eventType="touchUpInside" id="hVE-6y-EgC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95102716156794143" blue="0.90176522806150616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7lm-bv-hRT" firstAttribute="trailing" secondItem="iww-yC-1Qx" secondAttribute="trailing" constant="30" id="0Eb-DF-NpF"/>
+                            <constraint firstItem="Sfb-4C-cnD" firstAttribute="leading" secondItem="7lm-bv-hRT" secondAttribute="leading" constant="80" id="2us-Ep-uoY"/>
+                            <constraint firstItem="giv-4u-2Io" firstAttribute="top" secondItem="0b2-YL-zBj" secondAttribute="bottom" constant="45" id="4W8-Rc-69c"/>
+                            <constraint firstItem="7lm-bv-hRT" firstAttribute="trailing" secondItem="0b2-YL-zBj" secondAttribute="trailing" constant="30" id="7yx-wU-WvQ"/>
+                            <constraint firstItem="0b2-YL-zBj" firstAttribute="top" secondItem="Sfb-4C-cnD" secondAttribute="bottom" constant="41" id="HBZ-qu-jDl"/>
+                            <constraint firstItem="0b2-YL-zBj" firstAttribute="leading" secondItem="7lm-bv-hRT" secondAttribute="leading" constant="80" id="RMQ-gP-Yh4"/>
+                            <constraint firstItem="giv-4u-2Io" firstAttribute="leading" secondItem="7lm-bv-hRT" secondAttribute="leading" constant="80" id="WCH-9h-AeW"/>
+                            <constraint firstItem="iww-yC-1Qx" firstAttribute="leading" secondItem="7lm-bv-hRT" secondAttribute="leading" constant="80" id="bwa-Cq-Opa"/>
+                            <constraint firstItem="0b2-YL-zBj" firstAttribute="top" secondItem="Sfb-4C-cnD" secondAttribute="bottom" constant="41" id="dLe-Lx-rzo"/>
+                            <constraint firstItem="7lm-bv-hRT" firstAttribute="bottom" secondItem="giv-4u-2Io" secondAttribute="bottom" constant="69" id="jUy-Ee-VNY"/>
+                            <constraint firstItem="7lm-bv-hRT" firstAttribute="trailing" secondItem="Sfb-4C-cnD" secondAttribute="trailing" constant="30" id="lRp-Nt-7p1"/>
+                            <constraint firstItem="iww-yC-1Qx" firstAttribute="top" secondItem="7lm-bv-hRT" secondAttribute="top" constant="78" id="pBL-rH-MBF"/>
+                            <constraint firstItem="7lm-bv-hRT" firstAttribute="trailing" secondItem="giv-4u-2Io" secondAttribute="trailing" constant="30" id="zd4-VT-AX2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7lm-bv-hRT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UU6-Vb-IVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.78260869565224" y="18.75"/>
+        </scene>
+        <!--Selection Screen2-->
+        <scene sceneID="Gsi-w3-KkI">
+            <objects>
+                <viewController id="Nrj-PO-hlY" customClass="SelectionScreen2" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4j-KF-Uwn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-88-mpB">
+                                <rect key="frame" x="90" y="344" width="304" height="167"/>
+                                <state key="normal" title="Button" image="Japan"/>
+                                <connections>
+                                    <action selector="JapanTapped:" destination="Nrj-PO-hlY" eventType="touchUpInside" id="c1U-fq-vQ3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9510271616" blue="0.90176522810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bR4-88-mpB" firstAttribute="leading" secondItem="U5R-4D-X4r" secondAttribute="leading" constant="90" id="0qt-yp-N5N"/>
+                            <constraint firstItem="U5R-4D-X4r" firstAttribute="trailing" secondItem="bR4-88-mpB" secondAttribute="trailing" constant="20" id="bmk-E5-AnE"/>
+                            <constraint firstItem="bR4-88-mpB" firstAttribute="top" secondItem="U5R-4D-X4r" secondAttribute="top" constant="300" id="cM9-Np-bnu"/>
+                            <constraint firstItem="U5R-4D-X4r" firstAttribute="bottom" secondItem="bR4-88-mpB" secondAttribute="bottom" constant="351" id="tP9-9z-Abv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U5R-4D-X4r"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAl-bf-Kxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="733"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Canada" width="250" height="125"/>
+        <image name="Germany" width="250" height="150"/>
+        <image name="Japan" width="250" height="167"/>
+        <image name="UK" width="250" height="125"/>
+        <image name="UN" width="1208" height="1027"/>
+        <image name="USA" width="250" height="132"/>
+    </resources>
+</document>
